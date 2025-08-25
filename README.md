@@ -34,15 +34,14 @@ The objective of this assignment is to perform **Exploratory Data Analysis (EDA)
 ### Energy Consuptio by cities
 ![Sector Usage](plots/Energy-consuptio-by-cities.png)
 
+### National Energy balance
+![Eng_bal](plots/nationa-energy-balance.png)
+
 ### Transport-Energy-per-mode.png
 ![Renewables](plots/Transport-Energy-per-mode.png)
 
 ### Actual vs Predicted and forecast
 ![Forecast](plots/forecast.png)
-
-### National Energy balance
-![Eng_bal](plots/nationa-energy-balance.png)
-
 
 ---
 
