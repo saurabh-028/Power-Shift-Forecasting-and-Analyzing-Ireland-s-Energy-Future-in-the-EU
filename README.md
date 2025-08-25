@@ -1,59 +1,57 @@
-# 📊 Data Analysis Assignment — BMI & Grip Strength Study
+# 📊 Data Analysis Assignment — Ireland Energy Trends (1990–2023)
 
 ## 🎯 Project Aim
 
-The goal of this assignment was to apply **Exploratory Data Analysis (EDA)** and **statistical modeling** techniques to a dataset of **BMI (Body Mass Index) and Grip Strength measurements**. The study explores growth patterns, gender differences, and develops predictive models for health-related insights.
+The objective of this assignment is to perform **Exploratory Data Analysis (EDA)** on Ireland’s energy data from **1990 to 2023**, uncovering insights into consumption patterns, production trends, and renewable energy adoption.
 
 ---
 
 ## ⚙️ Methodology
 
-* **Data Cleaning & Preparation**
+* **Data Collection & Cleaning**
 
-  * Checked for missing values and anomalies.
-  * Standardized variable names and ensured consistent data types.
+  * Imported national energy datasets.
+  * Removed inconsistencies and ensured correct data formats.
 
 * **Exploratory Data Analysis (EDA)**
 
-  * Univariate analysis of BMI and Grip Strength distributions.
-  * Bivariate analysis across **age groups** and **gender**.
-  * Visualizations: histograms, scatterplots, correlation matrices.
+  * Analyzed **consumption vs. production** patterns.
+  * Evaluated **sector-wise energy usage** (transport, industry, households).
+  * Tracked **renewable energy contributions** over time.
 
-* **Statistical Modeling**
+* **Visualization**
 
-  * Applied **GAMLSS (Generalized Additive Models for Location, Scale, and Shape)**.
-  * Fitted **centile curves** to capture growth and strength variations.
-  * Compared models on metrics such as AIC, BIC, and RMSE.
+  * Line plots to show yearly consumption & production.
+  * Bar charts for sector-wise breakdowns.
+  * Trend analysis for renewables (wind, solar, hydro).
+ 
+  **plots**
+  ## 📊 Key Insights
+
+### Energy-consumption-count (1990–2023)
+![Energy Trends](plots/Energy-consumption-count.png)
+
+### Energy Consuptio by cities
+![Sector Usage](plots/Energy-consuptio-by-cities.png)
+
+### Transport-Energy-per-mode.png
+![Renewables](plots/Transport-Energy-per-mode.png)
+
+### Actual vs Predicted and forecast
+![Forecast](plots/forecast.png)
+
+### National Energy balance
+![Eng_bal](plots/nationa-energy-balance.png)
+
 
 ---
 
-## 📊 Results & Insights
+## 📊 Key Insights
 
-* **Gender Differences:**
-
-  * Males generally displayed higher grip strength across age ranges.
-  * BMI patterns showed less pronounced gender differences.
-
-* **Age Trends:**
-
-  * Grip strength increased with age up to adulthood, then plateaued.
-  * BMI steadily increased, with slight differences by gender.
-
-* **Model Performance:**
-
-  * GAMLSS centile models effectively captured **nonlinear growth patterns**.
-  * Chosen models achieved a good balance between accuracy and interpretability.
-
----
-
-## 🛠️ Tools & Libraries
-
-* **Languages:** R (primary), Python (EDA validation)
-* **Key Packages:**
-
-  * `gamlss` (centile curve modeling)
-  * `ggplot2`, `dplyr` (visualizations & data wrangling)
-  * `readr`, `tidyr` (data import/cleaning)
+* **Energy Dependency**: Ireland’s **energy demand outpaces domestic production**, leading to reliance on imports.
+* **Sectoral Trends**: Transport and households remain the largest energy consumers.
+* **Renewables Growth**: Strong upward trend in wind and solar since 2005, but fossil fuels still dominate.
+* **Sustainability Gap**: Despite growth in renewables, achieving **EU climate targets** remains a challenge.
 
 ---
 
@@ -61,25 +59,28 @@ The goal of this assignment was to apply **Exploratory Data Analysis (EDA)** and
 
 ```
 Data_analysis_assignment/
-├─ Data_analysis_assignment.html   # Full analysis report
-├─ Data_analysis_assignment.ipynb  # Jupyter version (if applicable)
-├─ data/                           # Raw and cleaned datasets
-├─ plots/                          # Exported figures
+├─ Data_analysis_assignment.html   # Full notebook with outputs
+├─ Data_analysis_assignment.ipynb  # (Optional) Jupyter Notebook version
+├─ data/                           # Energy datasets
+├─ plots/                          # Exported graphs
 └─ README.md                       # Project summary
 ```
 
 ---
 
+## 🛠️ Tools & Libraries
+
+* **Language**: Python (Jupyter/Colab)
+* **Libraries**:
+
+  * `pandas`, `numpy` → Data wrangling
+  * `matplotlib`, `seaborn` → Visualization
+  * `scikit-learn` (optional) → Trend analysis
+
+---
+
 ## 🔮 Future Work
 
-* Expand dataset with more demographic variables.
-* Incorporate **machine learning regression models** for BMI prediction.
-* Explore **causal inference** methods for lifestyle-health relationships.
-
----
-
-👉 This README positions the project as a **data-driven statistical study with real-world applications in health analytics**.
-
----
-
-Do you want me to **embed some actual plots or numerical results** (like mean BMI, R² values, etc.) into the README so it looks more evidence-based, or keep it abstract and professional like this?
+* Forecast future energy trends using **time series models (ARIMA, LSTM)**.
+* Compare Ireland’s energy trends with other EU countries.
+* Investigate **policy impacts** on renewable adoption.
